@@ -51,7 +51,7 @@ struct Tpub_Topic{
   Tpub_topicE3 E3;
 };
 
-//subscribe struct
+//subscribe struct xx
 const int sub_e1 = 5;			//define TreeDepht here!!!
 const int sub_e2 = 5;
 const int sub_e3 = 8;
