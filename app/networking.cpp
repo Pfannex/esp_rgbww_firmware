@@ -168,7 +168,13 @@ void AppWIFI::_STAGotIP(IPAddress ip, IPAddress mask, IPAddress gateway) {
 	debugapp("AppWIFI::_STAGotIP");
 	_con_ctr = 0;
 	_client_status = CONNECTION_STATUS::CONNECTED;
+
+	//TODO  warum AP wenn WiFi vorhanden? dann kann man doch auch darüber rein....
 	stopAp(90000); //disabling ap after 90seconds
+
+//Pf@nne
+	debugapp("AppWIFI::_STAGotIP startMQTT");
+	app.startMQTT();
 }
 
 

@@ -109,6 +109,11 @@ void Application::startServices()
 	webserver.start();
 
 }
+void Application::startMQTT(){
+	//if(cfg.network.mqtt.enabled) {
+			mqttclient.start();
+		//}
+}
 
 
 void Application::restart() {

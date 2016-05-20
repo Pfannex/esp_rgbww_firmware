@@ -22,13 +22,14 @@ MODULES = app
 
 ## COM port parameter is reqruied to flash firmware correctly.
 ## Windows: 
-# COM_PORT = COM3
+COM_PORT = COM7
 
 ## MacOS / Linux:
 # COM_PORT = /dev/tty.usbserial
 
 ## Com port speed
-COM_SPEED	= 115200
+#COM_SPEED	= 115200
+COM_SPEED	= 460800
 
 ## Configure flash parameters (for ESP12-E and other new boards):
 # SPI_MODE = dio

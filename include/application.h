@@ -34,6 +34,8 @@ public:
 	void init();
 
 	void startServices();
+	void startMQTT();
+
 	void stopServices();
 
 	void reset();
@@ -58,6 +60,7 @@ public:
 	APPLedCtrl rgbwwctrl;
 	ApplicationOTA ota;
 	ApplicationSettings cfg;
+	ApplicationMQTTClient mqttclient;
 
 private:
 	void loadbootinfo();
